@@ -1,15 +1,21 @@
 *{
+    /* Zerando */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
+    /* Fontes */
     font-family: 'Poppins', sans-serif;
+
+    /* Configurando background-image */
     background: url('../assets/bgyuyu.jpg') no-repeat top center;
     background-attachment: fixed; 
     background-size: cover; 
     display: grid;
+    
+    /* Alinhamento */
     align-items: center;
     justify-items: center;
     height:100vh;
@@ -17,19 +23,24 @@ body{
 }
 
 li{
+    /* Tirando bolinhas da li */
     list-style: none;
 }
 
 img{
+
     /* Para que não estique = display:block */
     display:block;
     max-width: 100%;
 }
 
 .box {
+    /* Cores */
     background: #eee;
-    padding: 4rem;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+    
+    /* Ajustando Box */
+    padding: 4rem;
     border-radius: 50px;
     text-align:center;
 }
