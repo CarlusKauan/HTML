@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(/assets/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #000000;
+    position: relative;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header .nav a{
+    text-transform: uppercase;
+    color: #fff;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 2px 10px;
+    transition: .9s;
+}
+
+header .nav a:not(last-child){
+    margin-right: 1px;   
+}
+
+header .nav a:hover{
+    color: #2D2D2D;
+}
+
+img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+}
+
+
+
+.content{
+    max-width: 470px;
+    margin: 100px 20px;
+    background-color: #F8F8F8;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.content .info h2{
+    font-size: 1.5rem;
+    padding: 8px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    margin-bottom: 25px;
+}
+
+.content .info h2 span{
+    color: #d51117;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.content .info p{
+    font-size: 1.1rem;
+    padding: 10px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.content .info-btn{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    background: #2D2D2D;
+    
+    padding: 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: .9s;
+}
+
+.nav .info-btn {
+    font-size: .9rem;
+    background-color: #2D2D2D;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    
+    padding: 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: .9s;
+}
