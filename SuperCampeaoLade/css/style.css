@@ -9,7 +9,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: url(/assets/bg.png) no-repeat;
+    background: url(/assets/bg2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     
@@ -50,6 +50,7 @@ header .nav a:hover{
 }
 
 img{
+    display: block;
     position: absolute;
     top: 10px;
     left: 10px;
