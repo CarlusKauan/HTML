@@ -37,11 +37,6 @@ h2 {
     font-weight: 700;
     margin-top: 20px;
 }
-
-button {
-    color: var(--cor-primaria);
-}
-
 /* ------- header -------- */
 
 header {
@@ -132,4 +127,87 @@ header .navbar span {
     }
 }
 
+
+    /* ------- home -------- */
+
+    .flex{
+        display: flex; 
+
+    }
+
+    .left, .right{
+        width: 50%;
+    }
+
+
+    button{
+        outline: none;
+        border: none;
+        background: none;
+        padding: 12px 50px;
+        background: var(--cor);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: .8s;
+    }
+
+    button:hover{
+        border: 1px solid var(--cor);
+        color: var(--cor);
+        background: none;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .home {
+        margin-top: 50px;
+        place-items: center;
+    }
+
+    .home p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .home .left{
+        width: 70%;
+        margin-right: 50px;
+        margin-top: 10%;
+    }
+
+
+    .home .right img {
+        width: auto;
+        height: auto;
+    }
+
+    .dots{
+        margin-top: 20%;
+        justify-content: center;
+    }
+
+    .dots label{
+        padding: 5px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background: white;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .dots label:hover{
+        background: var(--cor);
+    }
+
+     .dots label:nth-child(2){
+        background: var(--cor);
+    }
+    /* ------- home -------- */
+
     /* ------- header -------- */
+
