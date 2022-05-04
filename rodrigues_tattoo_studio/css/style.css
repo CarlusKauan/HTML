@@ -1,0 +1,16 @@
+html{
+    --cor-fundo: #212121;
+    --cor-fonte: #FFFF;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    /* fonts */
+    font-family: 'Lora', serif;
+    color: var(--cor-fonte);
+    font-weight: 400;
+}
