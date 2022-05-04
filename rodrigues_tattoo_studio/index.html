@@ -1,20 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- adicionar icone do projeto -->
+    <!-- adicionar icones do projeto -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link css -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- fontes-->
+    <!-- fontes css-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Rodrigues Tatto</title>
 </head>
+
 <body>
-    <div class="container">
-        
-    </div>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <h2>Rodrigues Tatto</h2>
+                </div>
+
+                <nav>
+                    <ul id="menuitem">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <i class="fa fa-search"></i>
+                    </ul>
+                </nav>
+
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+
+            <div class="home flex">
+                <div class="left">
+                    <h2>Melhores Tatuagens</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum reprehenderit mollitia eius
+                        vero
+                        dolores architecto, necessitatibus quidem adipisci. Mollitia enim id vel impedit eaque veritatis
+                        aspernatur rem in recusandae expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <button>Procure Mais</button>
+                </div>
+
+                <div class="dots flex">
+                    <label for=""></label>
+                    <label for=""></label>
+                    <label for=""></label>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="img">
+                    <img src="assets/Tatuagem.png" alt="Mulher com Tatuagem no braço">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- Parte de JavaScript -->
+    <script>
+        var menuItem = document.getElementById('menuitem');
+        menuitem.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuItem.style.maxHeight == '0px') {
+                menuitem.style.maxHeight = "300px";
+            } else {
+                menuitem.style.maxHeight = "00px";
+            }
+        }
+        /*
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        */
+    </script>
+
 </body>
+
 </html>
